@@ -1,0 +1,31 @@
+public class Square {
+
+    private final double height;
+    private final double width;
+    
+
+
+ public double getArea() {
+
+     return height * width;
+      
+     }
+ public double getPerimeter() {
+ 
+ return height * width * 4;
+ 
+ }
+ public Square (double h, double w) {
+ 
+     height = h;
+     width = w;
+ }
+ 
+    public static void main(String[] args) {
+      Square square1 = new Square(2, 4);   
+     Square  square2 = new Square(4, 4); 
+      
+      System.out.println("The area of the first square is " + square1.getArea() + " and the perimeter is " + square1.getPerimeter()  
+              + " while the second square has an area of " + square2.getArea() + " and a perimeter of " + square2.getPerimeter());
+}
+}
